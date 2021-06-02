@@ -23,6 +23,7 @@ class App {
     this.exceptionHandler();
   }
 
+  // middlewares
   middlewares() {
     this.server.use(Sentry.Handlers.requestHandler());
     this.server.use(cors());
